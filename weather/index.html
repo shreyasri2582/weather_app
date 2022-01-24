@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link href="/css/weather/we.css" type="text/css" rel="stylesheet" />
+    <script src="weather.js"></script>
+  </head>
+  <header><h1>Welcome to weather App!</h1></header>
+  <body>
+    <h1>So, what’s the weather like where you are? ☔️</h1>
+    
+      <select id="d1" style="text-align: center">
+        <option value="chennai">chennai</option>
+        <div id="d2">
+          <option value="goa">goa</option>
+        </div>
+        <option value="Amsterdam" onclick="gfg_Run()">Amsterdam</option>
+        <option value="Osaka">Osaka</option>
+        <option value="Agra">Agra</option>
+        <option value="Las Vegas">Las Vegas</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Shanghai">Shanghai</option>
+        <option value="Pattaya">Pattaya</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <button onclick="f1()" id="pp">submit</button>
+      <p id="mypara"></p>
+
+      <img id="myimg" src="" />
+    <script>
+         function changeColor(color) {
+                document.body.style.background = color;
+            }
+             function gfg_Run() {
+                changeColor('yellow');}
+    </script>
+  </body>
+</html>
